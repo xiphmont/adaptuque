@@ -41,8 +41,9 @@ several common SES requests, etc.
 No; this patch does not enable or expose any features that aren't
 already supported in some way by the stock cards, and you obviously
 can only use it on a card you've bought, using firmware you already
-have. The patch corrects bugs, streamlines a little nastiness, and
-adds some configurability.
+have. It (unfortunately) does not expose any of the reverse
+engineering work I've done on the expanders.  This patch corrects
+bugs, streamlines a little nastiness, and adds some configurability.
 
 I have the individual right to modify cards I own for my personal use,
 and so do you.
@@ -63,7 +64,8 @@ official source, then flashed to the expander.
 
 Perhaps Adaptec will be fine with all this; I'd love to be able to
 upload the extensive Ghidra files involved in writing these patches.
-But for now, that's a no-go.
+I'd love to make independent audit of these chages easy. But for now,
+that's all a no-go.
 
 # How do I use it?
 
