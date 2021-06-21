@@ -38,15 +38,11 @@ several common SES requests, etc.
 
 # Is this some sort of crack?
 
-No; this patch does not enable or expose any features that aren't
-already supported in some way by the stock cards, and you obviously
-can only use it on a card you've bought, using firmware you already
-have. It (unfortunately) does not expose any of the reverse
-engineering work I've done on the expanders.  This patch corrects
-bugs, streamlines a little nastiness, and adds some configurability.
-
-I have the individual right to modify cards I own for my personal use,
-and so do you.
+tldr, No; this patch does not enable or expose any features that
+aren't already supported in some way by the stock cards, and you
+obviously can only use it on a card you've bought, using firmware you
+already have. I have the individual right to modify cards I own for my
+personal use, and so do you.
 
 That said, it _is_ reverse-engineed from firmware pulled off of
 second-hand cards, and cross-referenced against firmware binaries made
@@ -57,15 +53,18 @@ interest in harming Adaptec's trade secrets, copyright, or
 intellectual property.  The patch isn't looking to pick any fights,
 just improve the firmware.
 
-The patch itself is entirely original code that replaces segments of
-the stock firmware.  It does not include any of the original firmware
-itself. It has to be applied to a firmware package downloaded from an
-official source, then flashed to the expander.
+The patch itself is original code that replaces segments of the stock
+firmware.  It does not include any of the original firmware itself. It
+has to be applied to a firmware package downloaded from an official
+source.  When applied, the patch creates a normal firmware update that
+fixes bugs, streamlines a little nastiness, and adds some
+configurability. That's all. It flashes with Adaptec's standard
+utilities, makes no permanent changes, and the card can be reverted to
+stock firmware at any time.
 
 Perhaps Adaptec will be fine with all this; I'd love to be able to
 upload the extensive Ghidra files involved in writing these patches.
-I'd love to make independent audit of these chages easy. But for now,
-that's all a no-go.
+But for now, that's a no-go.
 
 # How do I use it?
 
